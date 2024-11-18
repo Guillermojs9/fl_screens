@@ -1,8 +1,8 @@
-import 'package:fl_screens/screens/home_screen.dart';
+import 'package:fl_screens/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Screens personalizados",
-      home: HomeScreen(),
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.getAppRoutes(),
     );
   }
 }
-

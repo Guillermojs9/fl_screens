@@ -8,18 +8,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Componentes de Flutter"),
+          title: const Text("Screens personalizados"),
           backgroundColor: Colors.blue,
         ),
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
-                  leading: Icon(AppRoutes.MenuOptions[index].icon),
+                  trailing: Icon(AppRoutes.MenuOptions[index].icon),
                   title: Text(AppRoutes.MenuOptions[index].name),
-                  /*
                   onTap: () {
                     Navigator.pushNamed(context, AppRoutes.MenuOptions[index].route);
                   },
-                  */
                 ),
             separatorBuilder: (context, index) => const Divider(),
             itemCount: AppRoutes.MenuOptions.length));
