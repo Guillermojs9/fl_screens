@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class CustomCard extends StatelessWidget {
   final String imageUrl1;
   final String nombre;
@@ -19,7 +20,9 @@ class CustomCard extends StatelessWidget {
         children: [
           FadeInImage(
             image: NetworkImage(imageUrl1),
-            placeholder: const AssetImage('assets/loading.jpg', ),
+            placeholder: const AssetImage(
+              'assets/loading.jpg',
+            ),
             width: double.infinity,
             height: 260,
             fit: BoxFit.cover,
@@ -29,6 +32,10 @@ class CustomCard extends StatelessWidget {
             alignment: AlignmentDirectional.centerEnd,
             padding: const EdgeInsets.only(top: 10, bottom: 10, right: 10),
             child: Text(nombre),
+          ),
+          Container(
+            alignment: AlignmentDirectional.centerEnd,
+            child: Text(texto),
           )
         ],
       ),
