@@ -19,7 +19,7 @@ class CustomCard extends StatelessWidget {
         children: [
           FadeInImage(
             image: NetworkImage(imageUrl1),
-            placeholder: const AssetImage('assets/jar-loading.gif'),
+            placeholder: const AssetImage('assets/loading.jpg', ),
             width: double.infinity,
             height: 260,
             fit: BoxFit.cover,
