@@ -13,6 +13,11 @@ class CardScreen extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: Center(child: card),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.close),
+        onPressed: () => Navigator.pop(context),
+      ),
     );
   }
 }
