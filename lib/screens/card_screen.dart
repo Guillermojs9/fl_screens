@@ -9,10 +9,10 @@ class CardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("Card Screen"),
-          backgroundColor: Colors.blue,
-        ),
-        body: card,
+        title: Text(card.nombre),
+        backgroundColor: Colors.blue,
+      ),
+      body: Center(child: card),
     );
   }
 }
