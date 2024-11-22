@@ -16,7 +16,10 @@ class HomeScreen extends StatelessWidget {
           final customCard = AppRoutes.cards[index];
           return ListTile(
             trailing: Icon(AppRoutes.MenuOptions[index].icon),
-            title: Text(AppRoutes.MenuOptions[index].name),
+            title: Text(
+              AppRoutes.MenuOptions[index].name,
+              style: const TextStyle(fontSize: 18),
+            ),
             onTap: () {
               Navigator.push(
                 context,
