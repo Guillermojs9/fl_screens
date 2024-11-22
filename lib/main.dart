@@ -1,4 +1,5 @@
 import 'package:fl_screens/routes/app_routes.dart';
+import 'package:fl_screens/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Screens personalizados",
+      theme: AppTheme.lightTheme,
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
     );

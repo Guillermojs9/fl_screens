@@ -9,12 +9,11 @@ class CardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(card.nombre),
-        backgroundColor: Colors.blue,
       ),
       body: Center(child: card),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blue,
         child: const Icon(Icons.close),
         onPressed: () => Navigator.pop(context),
       ),
